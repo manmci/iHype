@@ -1,0 +1,19 @@
+html, body {
+    margin: 0px;
+    background-color: #FFF4CA;
+}
+main {
+    border: 1px dashed red;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+footer {
+    border: 1px dashed orangered;
+    padding: 15px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #F2B6CC;
+}
+.invis {
+    display: none;
+}

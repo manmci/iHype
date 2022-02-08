@@ -1,0 +1,13 @@
+<svg width="330" height="158" viewBox="0 0 330 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_19_306)">
+<path d="M0 0H330V158H0V0Z" fill="white"/>
+<line y1="-0.5" x2="365.874" y2="-0.5" transform="matrix(0.901949 0.431842 -0.901949 0.431842 0 0)" stroke="#5533BB"/>
+<line y1="-0.5" x2="365.874" y2="-0.5" transform="matrix(0.901949 -0.431842 0.901949 0.431842 0 158)" stroke="#5533BB"/>
+</g>
+<path d="M0 0V-1H-1V0H0ZM330 0H331V-1H330V0ZM330 158V159H331V158H330ZM0 158H-1V159H0V158ZM0 1H330V-1H0V1ZM329 0V158H331V0H329ZM330 157H0V159H330V157ZM1 158V0H-1V158H1Z" fill="#5533BB"/>
+<defs>
+<clipPath id="clip0_19_306">
+<path d="M0 0H330V158H0V0Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>
