@@ -5,7 +5,7 @@ html, body {
     overflow-x: hidden;
 }
 main {
-    margin: 0 auto;
+    margin: 10px auto;
     text-align: center;
     width: 75%;
     color: #5533BB;
@@ -13,13 +13,13 @@ main {
 }
 footer {
     color: #BF5486;
-    padding: 15px;
-    margin: 0 auto;
+    padding: 5px 15px 5px 15px;
     width: 100%;
     overflow: hidden;
     background-color: #F2B6CC;
     position: fixed;
     bottom: 0;
+    box-sizing: border-box;
 }
 .invis {
     display: none;
@@ -32,7 +32,7 @@ footer {
     color: #F2B6CC;
     padding: 10px;
     text-decoration: none;
-    margin: 5px;
+    margin: 20px;
 }
 
 /* Typography */
@@ -61,22 +61,14 @@ h4 {
     font-size: 17pt;
     line-height: 22pt;
 }
-h5 {
-    font-size: 34pt;
-    line-height: 41pt;
-}
-h6 {
-    font-size: 34pt;
-    line-height: 41pt;
-}
 p {
-    font-size: 17pt;
-    line-height: 21pt;
+    font-size: 14pt;
+    line-height: 18pt;
 }
 footer p {
     font-size: 12pt;
-    line-height: 16pt;
     text-align: center;
+    margin-bottom: 0;
 }
 footer a {
     font-family: 'Righteous', sans-serif;
@@ -98,4 +90,17 @@ footer a {
     text-align: justify;
     width: 50%;
     margin: 10px auto;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 760px) {
+main {
+    width: unset;
+    margin: 10px 15px 100px;
+    
+}
+.name, .about {
+    width: 80%;
+}
 }
