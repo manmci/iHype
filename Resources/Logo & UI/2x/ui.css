@@ -61,3 +61,36 @@
     width: 27px;
     height: 104px;
 }
+
+
+.test::before {
+    content: "";
+    position: relative;
+    left: -10px;
+    top: -10px;
+    min-height: 1em;
+    display: inline-block;
+    background-image: url("images/chat_bot_01.png");
+    width: 11px;
+    z-index: 10;
+}
+.test::after {
+    content: "";
+    position: relative;
+    right: -15px;
+    top: -11px;
+    height: 15px;
+    display: inline-block;
+    background-image: url("images/chat_bot_03.png");
+    width: 13px;
+    z-index: 10;
+}
+.test {
+    background-image: url("images/chat_bot_02.png");
+    padding: 10px;
+    z-index: 1;
+    color: #fff4ca;
+    font-family: 'gill sans', sans-serif;
+    width: fit-content;
+    border-radius: 5px;
+}
