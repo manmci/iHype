@@ -34,7 +34,15 @@ footer {
     text-decoration: none;
     margin: 20px;
 }
+.button:hover {
+    background-color: #5B7AD9;
 
+}
+.button:active {
+  background-color: #5B7AD9;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Righteous', sans-serif;
