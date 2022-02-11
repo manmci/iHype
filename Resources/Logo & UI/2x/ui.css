@@ -6,6 +6,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+* {
+    box-sizing:border-box;
+}
 .break {
     height: 0;
     width: 100%;
@@ -36,6 +39,7 @@
     font-family: 'gill sans', sans-serif;
     background-color: #5533bb;
     flex-grow: 1;
+    padding: 1%;
 }
 .content_right {
     background-image: url("images/chat_bot@2x_06.png");
