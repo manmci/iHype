@@ -1,0 +1,209 @@
+* {
+    box-sizing:border-box;
+}
+main {
+    overflow-y: scroll;
+    height: 400px;
+    width: 100%;
+}
+footer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.right_align {
+    margin: 10px auto 0px 15px;
+    width: fit-content;
+}
+.left_align {
+    margin: 10px 15px 0px auto;
+    width: fit-content;
+}
+.chat_container {
+    min-width: 300px;
+    max-width: 330px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.break {
+    height: 0;
+    width: 100%;
+}
+/* Scrollbar */
+html {
+    --scrollbarBG: #ddd1a3;
+    --thumbBG: #BF5486;
+  }
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+
+/* Bot */
+.bot .top_left {
+    background-image: url("../img/chat_bot_01.png");
+    width: 11px;
+    height: 15px;
+}
+.bot .top_middle {
+    background-image: url("../img/chat_bot_02.png");
+    height: 15px;
+    width: unset;
+    flex-grow: 1;
+}
+.bot .top_right {
+    background-image: url("../img/chat_bot_03.png");
+    height: 15px;
+    width: 13px;
+}
+
+.bot .content_left {
+    background-color: #5533bb;
+    width: 11px;
+}
+.bot .content_middle {
+    color: #fff4ca;
+    font-family: 'gill sans', sans-serif;
+    background-color: #5533bb;
+    flex-grow: 1;
+    width: 90%;
+    padding: 1%;
+}
+.bot .content_right {
+    background-image: url("../img/chat_bot_06.png");
+    width: 13px;
+}
+
+.bot .bottom_left {
+    background-image: url("../img/chat_bot_07.png");
+    width: 58px;
+    height: 50px;
+}
+.bot .bottom_middle {
+    background-image: url("../img/chat_bot_08.png");
+    flex-grow: 1;
+    height: 50px;
+}
+.bot .bottom_right {
+    background-image: url("../img/chat_bot_09.png");
+    width: 13px;
+    height: 50px;
+}
+
+/* User */
+.user .top_left {
+    background-image: url("../img/chat_user_01.png");
+    width: 11px;
+    height: 15px;
+}
+.user .top_middle {
+    background-image: url("../img/chat_user_02.png");
+    height: 15px;
+    width: unset;
+    flex-grow: 1;
+}
+.user .top_right {
+    background-image: url("../img/chat_user_03.png");
+    height: 15px;
+    width: 13px;
+}
+
+.user .content_left {
+    background-image: url("../img/chat_user_04.png");
+    width: 13px;
+}
+.user .content_middle {
+    color: #fff4ca;
+    font-family: 'gill sans', sans-serif;
+    background-color: #5b7ad9;
+    flex-grow: 1;
+    width: 90%;
+    padding: 1%;
+}
+.user .content_right {
+    background-color: #5b7ad9;
+    width: 13px;
+}
+
+.user .bottom_left {
+    background-image: url("../img/chat_user_07.png");
+    width: 13px;
+    height: 50px;
+}
+.user .bottom_middle {
+    background-image: url("../img/chat_user_08.png");
+    flex-grow: 1;
+    height: 50px;
+}
+.user .bottom_right {
+    background-image: url("../img/chat_user_09.png");
+    width: 58px;
+    height: 50px;
+}
+
+/* Button */
+.chat_button {
+    width: 125px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.chat_button .top_left {
+    background-image: url("../img/button_01.png");
+    width: 8px;
+    height: 9px;
+}
+.chat_button .top_middle {
+    background-image: url("../img/button_02.png");
+    height: 9px;
+    width: unset;
+    flex-grow: 1;
+}
+.chat_button .top_right {
+    background-image: url("../img/button_03.png");
+    height: 9px;
+    width: 8px;
+}
+.chat_button .content_left {
+    background-color: #5b7ad9;
+    width: 8px;
+}
+.chat_button .content_middle {
+    color: #fff4ca;
+    font-family: 'gill sans', sans-serif;
+    background-color: #5b7ad9;
+    flex-grow: 1;
+    text-align: center;
+    width: 80%;
+    padding: 1%;
+}
+.chat_button .content_right {
+    background-image: url("../img/button_06.png");
+    width: 8px;
+}
+
+.chat_button .bottom_left {
+    background-image: url("../img/button_07.png");
+    width: 8px;
+    height: 12px;
+}
+.chat_button .bottom_middle {
+    background-image: url("../img/button_08.png");
+    flex-grow: 1;
+    height: 12px;
+}
+.chat_button .bottom_right {
+    background-image: url("../img/button_09.png");
+    width: 8px;
+    height: 12px;
+}
