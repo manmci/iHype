@@ -9,7 +9,15 @@ main {
 footer {
     height: 200px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+}
+.user, .chat_button {
+    display: none;
+}
+.start {
+    display:  revert !important;
 }
 .right_align {
     margin: 10px auto 0px 15px;
@@ -155,8 +163,11 @@ html {
 /* Button */
 .chat_button {
     width: 125px;
+    height:fit-content;
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
+    margin: 10px;
 }
 .chat_button .top_left {
     background-image: url("../img/button_01.png");
