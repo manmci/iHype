@@ -4,7 +4,7 @@
 main {
     overflow-y: scroll;
     height: 400px;
-    width: 375px;
+    width: 342px;
     margin: 0 auto 200px;
     padding-bottom: 10px;
 }
@@ -32,7 +32,7 @@ footer {
     text-align: end;
 }
 .chat_container {
-    width:  300px;
+    width:  265px;
     display: flex;
     flex-wrap: wrap;
 }

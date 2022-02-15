@@ -24,6 +24,11 @@ footer {
 .invis {
     display: none;
 }
+#protohype {
+    height: 600px;
+    border: 0px;
+    border-radius: 5px;
+}
 .button {
     display: inline-block;
     border-radius: 5px;
@@ -36,7 +41,6 @@ footer {
 }
 .button:hover {
     background-color: #5B7AD9;
-
 }
 .button:active {
   background-color: #5B7AD9;

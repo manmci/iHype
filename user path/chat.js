@@ -31,7 +31,7 @@ const word = "Word. Got any plans tonight?"
 const excited = "<div class='content_middle' id='excited'>Yeah, I'm excited!"
 
 const yeah = "<div class='content_middle' id='yeah'>Yeah&hellip;"
-
+//const yeah = $("div").addClass("content_middle").attr("id", "yeah").text("Yeah&hellip;")
 const notYet = "<div class='content_middle' id='notYet'>Not yet."
 
 const nope = "<div class='content_middle' id='nope'>Nope."
@@ -75,61 +75,80 @@ const end = "<div class='content_middle' id='end'>End of protoHype. Thank you fo
         $("footer").append(buttonOpen + awesome + buttonClose);
         $("footer").append(buttonOpen + notGreat + buttonClose);
         $("footer").append(buttonOpen + hangin + buttonClose);
-        $("#doinOK").css("color", "#5533BB");
-        $("#awesome").css("color", "#5533BB");
-        $("#notGreat").css("color", "#5533BB");
+        $("#doinOK").css("color", "#5533BB").css("cursor", "not-allowed");
+        $("#awesome").css("color", "#5533BB").css("cursor", "not-allowed");
+        $("#notGreat").css("color", "#5533BB").css("cursor", "not-allowed");
 // User selects response            
-        $("#hangin").on("click", function (){
+        $("footer").on("click", "#hangin", function (){
 // Footer is cleared, user input added to chat
         $("footer").empty();
         $("main").append(userOpen + hangin + userClose).scrollTop($("main")[0].scrollHeight);
 // "Bot" response & options added
-            $("main").append(botOpen + word + botClose).scrollTop($("main")[0].scrollHeight);
-            $("footer").append(buttonOpen + excited +buttonClose);
-            $("footer").append(buttonOpen + yeah +buttonClose);
-            $("footer").append(buttonOpen + notYet +buttonClose);
-            $("footer").append(buttonOpen + nope +buttonClose);
-            $("#excited").css("color", "#5533BB");
-            $("#notYet").css("color", "#5533BB");
-            $("#nope").css("color", "#5533BB");
+            setTimeout(() => {
+                $("main").append(botOpen + word + botClose).scrollTop($("main")[0].scrollHeight);
+                setTimeout(() => {
+                    $("footer").append(buttonOpen + excited + buttonClose);
+                    $("footer").append(buttonOpen + yeah + buttonClose);
+                    $("footer").append(buttonOpen + notYet + buttonClose);
+                    $("footer").append(buttonOpen + nope + buttonClose);
+                    $("#excited").css("color", "#5533BB").css("cursor", "not-allowed");
+                    $("#notYet").css("color", "#5533BB").css("cursor", "not-allowed");
+                    $("#nope").css("color", "#5533BB").css("cursor", "not-allowed");    
+                }, 1000); 
+            }, 1000);
 // User selects response
-            $("#yeah").on("click", function (){
+            $("footer").on("click", "#yeah", function (){
 // Footer is cleared, user input added
             $("footer").empty();
             $("main").append(userOpen + yeah + userClose).scrollTop($("main")[0].scrollHeight);
 // "Bot" response & options added 
-                $("main").append(botOpen + stoked + botClose).scrollTop($("main")[0].scrollHeight);
-                $("footer").append(buttonOpen + poopEmoji +buttonClose);
-                $("footer").append(buttonOpen + notHot +buttonClose);
-                $("#poopEmoji").css("color", "#5533BB");
+                setTimeout(() => {
+                    $("main").append(botOpen + stoked + botClose).scrollTop($("main")[0].scrollHeight);
+                    setTimeout(() => {
+                        $("footer").append(buttonOpen + poopEmoji + buttonClose);
+                        $("footer").append(buttonOpen + notHot + buttonClose);
+                        $("#poopEmoji").css("color", "#5533BB").css("cursor", "not-allowed");    
+                    }, 1000);
+                }, 1000);
 // User selects response
-                $("#notHot").on("click", function(){
+                $("footer").on("click", "#notHot", function(){
 // Footer is cleared, user input added
                     $("footer").empty();
                     $("main").append(userOpen + notHot + userClose).scrollTop($("main")[0].scrollHeight);
 // "Bot" response & options added 
-                    $("main").append(botOpen + sucks + botClose).scrollTop($("main")[0].scrollHeight);
-                    $("footer").append(buttonOpen + thinkSo + buttonClose);
-                    $("footer").append(buttonOpen + dontKnow + buttonClose);
-                    $("#dontKnow").css("color", "#5533BB");
+                    setTimeout(() => {
+                        $("main").append(botOpen + sucks + botClose).scrollTop($("main")[0].scrollHeight);
+                        setTimeout(() => {
+                            $("footer").append(buttonOpen + thinkSo + buttonClose);
+                            $("footer").append(buttonOpen + dontKnow + buttonClose);
+                            $("#dontKnow").css("color", "#5533BB").css("cursor", "not-allowed");
+                        }, 1000);
+                    }, 1000);                    
 // User selects response
-                    $("#thinkSo").on("click", function(){
+                    $("footer").on("click", "#thinkSo", function(){
 // Footer is cleared, user input added                        
                         $("footer").empty();
                         $("main").append(userOpen + thinkSo + userClose).scrollTop($("main")[0].scrollHeight);
 // "Bot" response & options added
-                        $("main").append(botOpen + havePlans + botClose).scrollTop($("main")[0].scrollHeight);
-                        $("footer").append(buttonOpen + iDo + buttonClose);
-                        $("footer").append(buttonOpen + iDont + buttonClose);
-                        $("#iDont").css("color", "#5533BB");
+                        setTimeout(() => {
+                            $("main").append(botOpen + havePlans + botClose).scrollTop($("main")[0].scrollHeight);
+                            setTimeout(() => {
+                            $("footer").append(buttonOpen + iDo + buttonClose);
+                            $("footer").append(buttonOpen + iDont + buttonClose);
+                            $("#iDont").css("color", "#5533BB").css("cursor", "not-allowed");    
+                            },1000);
+                        }, 1000);                        
 // User selects response
-                        $("#iDo").on("click", function(){
+                        $("footer").on("click", "#iDo", function(){
 // Footer is cleared, user input added 
                             $("footer").empty();
                             $("main").append(userOpen + iDo + userClose).scrollTop($("main")[0].scrollHeight);
 // "Bot" response & demo ended
+                        setTimeout(() => {
                             $("main").append(botOpen + seeFriends + botClose).scrollTop($("main")[0].scrollHeight);
                             $("footer").append(buttonOpen + end + buttonClose);
+                            $("#end").css("cursor", "grabbing");
+                        }, 1000);
                         });
                     });                    
                 });
